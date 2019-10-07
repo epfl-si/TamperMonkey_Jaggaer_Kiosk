@@ -1,4 +1,4 @@
-# TamperMonkey_Jagger_Kiosk
+# TamperMonkey_Jaggaer_Kiosk
 ---------------------------------------------------
 
 This JavaScript Plugin allow your Firefox browser to play song when you have an issue on the Jaggaer Kiosk web page.
