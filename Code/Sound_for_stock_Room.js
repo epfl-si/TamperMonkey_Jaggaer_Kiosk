@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Sound for Stock Room
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @version      0.3
+// @description  Play Sound for Jaggaer Stock Room web interface
+// @author       EPFL Durrer Laurent
 // @match        https://erm-test-proj.epfl.ch/stockroom-kiosk/*
 // @match        https://erm-test.epfl.ch/stockroom-kiosk/*
 // @match        https://catalyse-erm.epfl.ch/stockroom-kiosk/*
 // @require      https://code.jquery.com/jquery-3.4.1.js
+// @downloadURL  https://raw.githubusercontent.com/loldu/TamperMonkey_Jaggaer_Kiosk/master/Sound_for_stock_Room.js
 // @grant        none
 // ==/UserScript==
 
@@ -34,10 +35,15 @@ window.$( document ).ajaxComplete(function( event, request, settings ) {
     //console.log("coucou");
 
     // Test value and execute sound
+    var notrecognized = ($("div#notrecognized").length);
     var notrecognizedbystockroom = ($("div#notrecognizedbystockroom").length);
     var containeralreadyscanned = ($("div#containeralreadyscanned").length);
 
-
+        if (notrecognized == 1){
+        songPlayer('http://ermpro02.epfl.ch:9999/employee_bar_code_not_recognized.ogg');
+        console.log("Employee bar code not recognized");
+        //alert("Employee bar code not recognized");
+        }
         if (notrecognizedbystockroom == 1){
         songPlayer('http://ermpro02.epfl.ch:9999/Item_not_recognized_by_stockroom.ogg');
         console.log("Item not recognized by stockroom");
