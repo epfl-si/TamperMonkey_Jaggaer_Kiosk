@@ -13,7 +13,7 @@ Install the js script
 1. Click on "Dashboard"
 2. Click on "Utilities"
 3. In Install from URL, put this URL:
-	https://raw.githubusercontent.com/loldu/TamperMonkey_Jaggaer_Kiosk/master/Sound_for_stock_Room.js
+	https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Sound_for_stock_Room.js
 	and click on Install
 4. Validate and install the script
 5. Check if the script is with the status enabled in "Installed userscripts"
