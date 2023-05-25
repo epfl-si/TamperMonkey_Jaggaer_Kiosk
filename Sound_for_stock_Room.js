@@ -88,17 +88,17 @@ window.$( document ).ajaxComplete(function( event, request, settings ) {
     var containeralreadyscanned = ($("div#containeralreadyscanned").length);
 
         if (notrecognized == 1){
-        songPlayer('http://ermpro02.epfl.ch:9999/employee_bar_code_not_recognized.ogg');
+        songPlayer('https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/employee_bar_code_not_recognized.ogg');
         console.log("Employee bar code not recognized");
         //alert("Employee bar code not recognized");
         }
         if (notrecognizedbystockroom == 1){
-        songPlayer('http://ermpro02.epfl.ch:9999/Item_not_recognized_by_stockroom.ogg');
+        songPlayer('https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/Item_not_recognized_by_stockroom.ogg');
         console.log("Item not recognized by stockroom");
         //alert("Item not recognized by stockroom");
         }
         if (containeralreadyscanned == 1){
-        songPlayer('http://ermpro02.epfl.ch:9999/Container_has_been_scanned_already.ogg');
+        songPlayer('https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/Container_has_been_scanned_already.ogg');
         console.log("Container has been scanned already");
         //alert("Container has been scanned already");
         }
