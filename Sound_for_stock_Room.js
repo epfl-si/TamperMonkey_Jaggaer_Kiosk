@@ -4,7 +4,7 @@
 // @version      0.4
 // @description  Play Sound for Jaggaer Stock Room web interface
 // @author       EPFL Durrer Laurent
-// @match        https://erm-test-proj.epfl.ch/stockroom-kiosk/app/*
+// @match        https://erm-dev.epfl.ch/stockroom-kiosk/app/*
 // @match        https://erm-test.epfl.ch/stockroom-kiosk/app/*
 // @match        https://catalyse-erm.epfl.ch/stockroom-kiosk/*
 // @require      https://code.jquery.com/jquery-3.4.1.js
