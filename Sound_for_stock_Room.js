@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sound for Stock Room
 // @namespace    stockroom-kiosk
-// @version      0.6
+// @version      0.7
 // @description  Play Sound for Jaggaer Stock Room web interface
 // @author       EPFL Durrer Laurent
 // @match        https://erm-dev.epfl.ch/stockroom-kiosk/app/*
@@ -81,7 +81,7 @@ $( document ).ready( async () => {
                 case '/stockroom-kiosk/app/secure/kiosk/validate/barcode' :
                     requestContent = JSON.parse( request.responseText ).status
                     if ( requestContent === -2 ) {
-                        songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/employee_bar_code_not_recognized.ogg' );
+                        songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/assets/employee_bar_code_not_recognized.ogg' );
                         console.log( `  ↳ Employee barcode not recognized` );
                     }
                     break;
@@ -90,7 +90,7 @@ $( document ).ready( async () => {
                 case '/stockroom-kiosk/app/secure/scan/barcode' :
                     requestContent = request.responseText.includes( 'id="notrecognizedbystockroom"' )
                     if ( requestContent ) {
-                        songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/Item_not_recognized_by_stockroom.ogg' );
+                        songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/assets/Item_not_recognized_by_stockroom.ogg' );
                         console.log( `  ↳ Item not recognized by stockroom` );
                     }
                     break;
@@ -104,7 +104,7 @@ $( document ).ready( async () => {
             // Test value and execute sound
             var containeralreadyscanned = ( $( 'div#containeralreadyscanned' ).length );
             if ( containeralreadyscanned == 1 ) {
-                songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Code/Container_has_been_scanned_already.ogg' );
+                songPlayer( 'https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/assets/Container_has_been_scanned_already.ogg' );
                 console.log( `  ↳ Container has been scanned already` );
             }
 
