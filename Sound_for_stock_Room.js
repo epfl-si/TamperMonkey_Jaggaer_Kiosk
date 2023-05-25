@@ -7,7 +7,7 @@
 // @match        https://erm-dev.epfl.ch/stockroom-kiosk/app/*
 // @match        https://erm-test.epfl.ch/stockroom-kiosk/app/*
 // @match        https://catalyse-erm.epfl.ch/stockroom-kiosk/*
-// @require      https://code.jquery.com/jquery-3.4.1.js
+// @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @downloadURL  https://raw.githubusercontent.com/epfl-si/TamperMonkey_Jaggaer_Kiosk/master/Sound_for_stock_Room.js
 // @grant        none
 // ==/UserScript==
