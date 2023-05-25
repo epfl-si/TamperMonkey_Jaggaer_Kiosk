@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sound for Stock Room
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Play Sound for Jaggaer Stock Room web interface
 // @author       EPFL Durrer Laurent
 // @match        https://erm-dev.epfl.ch/stockroom-kiosk/app/*
